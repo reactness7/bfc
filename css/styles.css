@@ -24,7 +24,7 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -143,7 +143,14 @@ h3 {
 .text--uppercase {
   text-transform: uppercase;
 }
-
+.discord{
+  width:70px;
+  cursor:pointer;
+}
+.gif{
+  width:70%;
+  cursor:pointer;
+}
 @media screen and (min-width: 850px) {
   h1 {
     font-size: 4.6rem;
@@ -168,12 +175,16 @@ h3 {
   h2 {
     font-size: 4rem;
   }
+  .gif{
+    width:30%
+  }
 }
 
 /* Links */
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .link {
@@ -243,8 +254,8 @@ a {
 }
 
 .media-icon {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
 }
 
 .currency-icon {
@@ -361,10 +372,12 @@ a {
 .card__header > h3 {
   display: inline;
   margin-right: 0.8rem;
+  margin-top:0.8rem;
 }
 
 .card__text {
   margin-bottom: 2.5rem;
+  line-height: 2;
 }
 
 .card--secondary {
@@ -375,6 +388,11 @@ a {
 .card--white {
   background-color: #E9E9EA;
   color: black;
+}
+
+.card--white img{
+  width:60%
+
 }
 
 /* Grids */
