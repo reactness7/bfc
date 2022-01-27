@@ -562,6 +562,7 @@ a {
   position: relative;
   padding: 1rem 3rem 5rem;
   background-color: var(--color-primary);
+  padding-bottom: 5rem;
 }
 
 .media-container {
