@@ -568,6 +568,7 @@ a {
 .media-container {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -644,12 +645,13 @@ a {
 @media screen and(min-width: 1024px) {
   .why-crappo {
     padding: 10rem 12rem 10rem;
+
   }
   .media-container {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
   }
-
   .media .icon-container {
     margin-bottom: 10rem;
   }
