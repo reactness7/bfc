@@ -75,13 +75,27 @@ html, body, #dragger, #ring, .imgS, .vignette {
 }
 
 
-html, body{
-  overflow:overflow;
-  background:#000;
+
+.slider{
+  width:100%;
+  overflow: hidden;
 }
 
-.slider div {
-  position: absolute;
+.slide-box{
+  display: flex; width: calc(25% * 16);
+}
+
+.slide-box{
+  display: flex;
+  width: calc(40% * 16);
+  animation: slide 30s linear infinite;
+}
+
+.slide-item{
+  width: 25%;
+  background-color: #0a0a1f;
+  margin-left:12px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -200,6 +214,9 @@ h3 {
   }
   .title {
     font-size: 3.2rem;
+  }
+  .slide-box{
+    width: calc(25% * 16);
   }
 }
 
@@ -554,6 +571,7 @@ a {
 canvas {
   width:100%;
   margin: 0 auto;
+  background-color: #0a0a1f;
 
 }
 /* Header Body */
